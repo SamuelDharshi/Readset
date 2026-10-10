@@ -1,0 +1,20 @@
+{
+  "rpc": [
+    "https://rpc.monad.xyz",
+    "https://rpc1.monad.xyz"
+  ],
+  "at": "2026-10-07T04:00:12.269Z",
+  "startBlock": 111201545,
+  "endBlock": 111221544,
+  "blocks": 20000,
+  "txs": 469655,
+  "txPerBlock": 23.48275,
+  "secondsSpan": 6038,
+  "blocksPerSec": 3.3123550844650547,
+  "tps": 77.78320635972176,
+  "avgBlockTimeMs": 301.9,
+  "emptyBlocks": 0,
+  "gasUsedOverGasLimit": 0.11898351457466666,
+  "avgGasLimitPerBlock": 150000000,
+  "avgGasUsedPerBlock": 17847527.1862
+}

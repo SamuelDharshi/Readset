@@ -1,0 +1,59 @@
+{
+  "url": "wss://rpc.monad.xyz",
+  "at": "2026-10-07T03:16:52.002Z",
+  "out": [
+    {
+      "params": [
+        "newHeads"
+      ],
+      "response": {
+        "result": "subscription id 0x18dc20f9..."
+      }
+    },
+    {
+      "params": [
+        "newPendingTransactions"
+      ],
+      "response": {
+        "result": "subscription id 0x18dc20f9..."
+      }
+    },
+    {
+      "params": [
+        "monadNewHeads"
+      ],
+      "response": {
+        "result": "subscription id 0xebe41d4f..."
+      }
+    },
+    {
+      "params": [
+        "syncing"
+      ],
+      "response": {
+        "error": {
+          "code": -32602,
+          "message": "Invalid params"
+        }
+      }
+    },
+    {
+      "params": [
+        "logs",
+        {}
+      ],
+      "response": {
+        "result": "subscription id 0xaaf57713..."
+      }
+    },
+    {
+      "params": [
+        "monadLogs",
+        {}
+      ],
+      "response": {
+        "result": "subscription id 0x63ef6a8f..."
+      }
+    }
+  ]
+}

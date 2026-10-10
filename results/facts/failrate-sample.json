@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-07T04:00:58.041Z",
+  "head": 111222852,
+  "sampledBlocks": 300,
+  "spacing": 66,
+  "txs": 6729,
+  "failed": 182,
+  "failRate": 0.02704710952593253,
+  "successGasUsedEqLimit": 6547,
+  "successTxs": 6547,
+  "sumTxGasLimitOverBlockGasLimit": 0.1150600178,
+  "blockGasUsedOverGasLimit": 0.1150600178,
+  "failedTxShareOfDeclaredGas": 0.03161182758346874,
+  "failedBurnMON_inSample": 36.07987241045464,
+  "avgBurnMONPerFailedTx": 0.19824105720030022
+}
