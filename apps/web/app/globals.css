@@ -1,0 +1,234 @@
+@import 'tailwindcss';
+
+/*
+ * Light, wide and quiet. The palette is white paper with a light-green wash; green is the
+ * product's own colour and marks what is safe or confirmed. Red is never decoration — it marks
+ * the one thing that moved against you. Numbers are tabular so columns line up.
+ */
+@theme {
+  /* paper */
+  --color-bg: #ffffff;
+  --color-wash: #eff9f1;
+  --color-panel: #ffffff;
+  --color-sunken: #f6fbf7;
+  --color-line: #dceade;
+  --color-line-strong: #c9e4cd;
+
+  /* ink */
+  --color-ink: #0c1710;
+  --color-body: #415446;
+  --color-dim: #6c8273;
+  --color-faint: #95a899;
+
+  /* meaning. Parrot green: the vivid tone fills and draws, the deep tone is for TEXT —
+     #2db742 on white is about 2.7:1, which is fine for a shape and not for a sentence. */
+  --color-green: #17913a;
+  --color-green-vivid: #1faa45;
+  --color-green-deep: #0f6e2b;
+  --color-green-ink: #0a5120;
+  --color-green-soft: #d9f1de;
+  --color-moved: #d8453f;
+  --color-moved-soft: #fdeceb;
+  --color-amber: #b5790b;
+  --color-dep: #2f6fdb;
+  --color-writer: #d9741f;
+
+  --font-display: var(--font-instrument), ui-serif, Georgia, serif;
+  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+html {
+  color-scheme: light;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 16.5px;
+  /* Medium as the baseline: at this size a 400 weight reads thin on white. */
+  font-weight: 500;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Soft green light from the top, so the page is not a flat white sheet. */
+.field {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(1200px 520px at 78% -12%, #d3f0d9 0%, transparent 62%),
+    radial-gradient(900px 460px at 2% -6%, #e6f7ea 0%, transparent 58%),
+    var(--color-bg);
+}
+
+/* ALL-CAPS section marker. */
+.marker {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11.5px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--color-green-ink);
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+
+a {
+  color: inherit;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--color-green-soft);
+  color: var(--color-green-ink);
+  padding: 0.1em 0.38em;
+  border-radius: 4px;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+strong,
+th {
+  font-weight: 600;
+}
+
+::selection {
+  background: var(--color-green-soft);
+}
+
+/* A hairline that spans the viewport, not just the content column. */
+.band {
+  border-top: 1px solid var(--color-line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/*
+ * The landing reads one screen at a time: each section fills the viewport and the scroll
+ * settles on it. `proximity` rather than `mandatory` on purpose — a section taller than the
+ * window (a long table on a laptop) must still scroll normally instead of fighting the reader.
+ */
+/* The snap axis must sit on the element that actually scrolls — the document, not <main>.
+   Only `.screen` declares a snap target, so every other page is unaffected. */
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+.screen {
+  scroll-snap-align: start;
+  /* clears the sticky header so a snapped section is not tucked under it */
+  scroll-margin-top: 66px;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 7vh 9vh;
+}
+
+/* The cue that there is more below. */
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
+
+.cue {
+  animation: nudge 2.1s ease-in-out infinite;
+}
+
+/* Markdown rendered from the repo's own docs. Scoped so it cannot leak into the app chrome. */
+.prose-readset {
+  max-width: 92ch;
+  color: var(--color-body);
+  font-size: 16px;
+  line-height: 1.75;
+}
+.prose-readset h1,
+.prose-readset h2,
+.prose-readset h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--color-ink);
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+.prose-readset h1 { font-size: 34px; margin: 2rem 0 1rem; }
+.prose-readset h2 { font-size: 27px; margin: 2.2rem 0 0.9rem; }
+.prose-readset h3 { font-size: 21px; margin: 1.8rem 0 0.7rem; }
+.prose-readset p { margin: 0 0 1rem; }
+.prose-readset ul,
+.prose-readset ol { margin: 0 0 1rem; padding-left: 1.3rem; }
+.prose-readset li { margin: 0.3rem 0; }
+.prose-readset strong { color: var(--color-ink); }
+.prose-readset a {
+  color: var(--color-green-ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-readset pre {
+  overflow-x: auto;
+  background: var(--color-sunken);
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 1.2rem;
+}
+.prose-readset table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+  margin: 0 0 1.4rem;
+}
+.prose-readset th,
+.prose-readset td {
+  border-bottom: 1px solid var(--color-line);
+  padding: 0.6rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+.prose-readset th { color: var(--color-dim); font-weight: 600; }
+.prose-readset blockquote {
+  border-left: 3px solid var(--color-green);
+  margin: 0 0 1.2rem;
+  padding: 0.2rem 0 0.2rem 1rem;
+  color: var(--color-dim);
+}
+.prose-readset hr { border: 0; border-top: 1px solid var(--color-line); margin: 2rem 0; }
