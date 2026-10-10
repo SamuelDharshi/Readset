@@ -1,0 +1,58 @@
+{
+  "name": "@readset/plugin",
+  "version": "0.1.0",
+  "description": "Readset for MetaMask Agent Wallet: refuse doomed sends, write dependency receipts, trip a breaker before an agent loop drains the wallet.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "keywords": [
+    "oclif-plugin",
+    "metamask",
+    "agent-wallet",
+    "monad"
+  ],
+  "files": [
+    "dist",
+    "oclif.manifest.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && oclif manifest"
+  },
+  "oclif": {
+    "bin": "mm",
+    "commands": "./dist/commands",
+    "topicSeparator": " ",
+    "topics": {
+      "readset": {
+        "description": "Readset: refuse doomed sends, dependency receipts, spend breaker"
+      }
+    }
+  },
+  "mm": {
+    "schemaVersion": 1,
+    "minCliVersion": "^7.0.0",
+    "capabilities": [],
+    "commands": [
+      { "id": "readset:gate", "capabilities": [], "dataAccess": [] },
+      { "id": "readset:status", "capabilities": [], "dataAccess": [] },
+      {
+        "id": "readset:safe-submit",
+        "capabilities": ["wallet-read", "wallet-submit"],
+        "dataAccess": ["balances"]
+      }
+    ]
+  },
+  "dependencies": {
+    "@readset/core": "*"
+  },
+  "peerDependencies": {
+    "@metamask/agent-wallet": "^7.0.0"
+  },
+  "devDependencies": {
+    "oclif": "^4.24.0"
+  }
+}

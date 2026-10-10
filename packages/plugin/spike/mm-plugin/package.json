@@ -1,0 +1,28 @@
+{
+  "name": "mm-plugin-readset-spike",
+  "version": "0.0.1",
+  "description": "Readset K3 spike: gated safe-submit for MetaMask Agent Wallet (mm)",
+  "license": "MIT",
+  "type": "module",
+  "keywords": ["oclif-plugin", "metamask", "agent-wallet", "monad"],
+  "files": ["dist", "oclif.manifest.json"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && oclif manifest"
+  },
+  "oclif": {
+    "bin": "mm",
+    "commands": "./dist/commands",
+    "topicSeparator": " ",
+    "topics": { "readset": { "description": "Readset: refuse doomed sends, receipts, breaker" } }
+  },
+  "mm": {
+    "schemaVersion": 1,
+    "minCliVersion": "^7.0.0",
+    "capabilities": [],
+    "commands": [
+      { "id": "readset:gate", "capabilities": [], "dataAccess": [] },
+      { "id": "readset:safe-submit", "capabilities": ["wallet-read", "wallet-submit"], "dataAccess": ["balances"] }
+    ]
+  },
+  "peerDependencies": { "@metamask/agent-wallet": "^7.0.0" }
+}

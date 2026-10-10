@@ -1,0 +1,1 @@
+{"ts":"2026-10-07T03:37:25.057Z","from":"0x28F0ae7b3dB471479196718794E0b3A4b9AB90BA","to":"0x28F0ae7b3dB471479196718794E0b3A4b9AB90BA","verdict":{"ok":false,"kind":"INSUFFICIENT_FUNDS","block":"68865185","reason":"balance 0 wei < value 1000000000000000 wei"}}
