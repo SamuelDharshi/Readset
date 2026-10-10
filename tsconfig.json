@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": { "noEmit": true, "rootDir": "." },
+  "include": ["packages/*/src/**/*.ts", "packages/*/test/**/*.ts", "scripts/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "**/dist/**",
+    // The oclif commands extend PluginCommand from @metamask/agent-wallet, which is a
+    // peerDependency with a source-viewable licence, so it is not installed at the workspace
+    // root. They are typechecked and built inside packages/plugin, where it is present:
+    //   cd packages/plugin && npm install && npm run build
+    // Everything they call lives in packages/plugin/src/{decide,tx,json}.ts, which IS checked here.
+    "packages/plugin/src/commands/**",
+    "packages/plugin/spike/**"
+  ]
+}
