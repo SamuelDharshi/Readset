@@ -1,0 +1,225 @@
+{
+  "endpoint": "https://testnet-rpc.monad.xyz",
+  "net": "testnet",
+  "reachable": true,
+  "chainId": "0x279f",
+  "client": "Monad/0.16.3",
+  "head": 68871576,
+  "history": {
+    "-1": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-100": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-10000": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-100000": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-1000000": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-5000000": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-20000000": {
+      "getBalance": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ethCall": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ok": false
+    },
+    "-50000000": {
+      "getBalance": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ethCall": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ok": false
+    },
+    "getBlockByNumber(-1M)": "ok",
+    "bisectedStateWindowBlocks": 13906250,
+    "archive": false
+  },
+  "tokenFallback": "0x534b2f3a21130d7a60830c2df862319e593943a3",
+  "holder": "0x59cd631f823cbc0f549fafb4c97da6144576466c",
+  "traceBlock": {
+    "number": 68871573,
+    "hash": "0x698265ef819a61165fcc8a611131c07c7a036e4728addbfbceec62cca0253197"
+  },
+  "traceCall": {
+    "prestate@latest": "ok",
+    "prestate@blockNumber": "ok",
+    "prestate@blockHashString": "ok",
+    "prestate@EIP1898{blockHash}": "ok",
+    "prestate@EIP1898{blockNumber}": "ok",
+    "prestate@-100": "ok",
+    "prestate@-10000": "ok",
+    "prestate@-100000": "ok",
+    "callTracer@blockNumber": "ok",
+    "prestate(no tracerConfig) READ": "ok",
+    "prestate diffMode:false READ": "ok",
+    "prestate diffMode:true READ": "ok",
+    "prestate diffMode:true WRITE(transfer)": "ok",
+    "prestate diffMode:false WRITE(transfer)": "ok"
+  },
+  "readOnlySlots": {
+    "note": "pure read: WMON.balanceOf(holder). hasHolderBalanceSlot=true means read-only slot IS listed",
+    "nonDiff_noConfig": {
+      "accountsListed": 3,
+      "wmonStorageKeys": 3,
+      "hasHolderBalanceSlot": true,
+      "keys": [
+        "0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b",
+        "0x7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c3",
+        "0xf1285c521ea44728723cb0168c0d4a198755c53681bf23b3a0a12f46120c51be"
+      ]
+    },
+    "nonDiff_false": {
+      "accountsListed": 3,
+      "wmonStorageKeys": 3,
+      "hasHolderBalanceSlot": true,
+      "keys": [
+        "0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b",
+        "0x7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c3",
+        "0xf1285c521ea44728723cb0168c0d4a198755c53681bf23b3a0a12f46120c51be"
+      ]
+    },
+    "diffMode_READ_pre": {
+      "accountsListed": 1,
+      "wmonStorageKeys": 0,
+      "hasHolderBalanceSlot": false,
+      "keys": []
+    },
+    "diffMode_READ_post": {
+      "accountsListed": 1,
+      "wmonStorageKeys": 0,
+      "hasHolderBalanceSlot": false,
+      "keys": []
+    },
+    "diffMode_WRITE_pre": {
+      "accountsListed": 2,
+      "wmonStorageKeys": 2,
+      "hasHolderBalanceSlot": true,
+      "keys": [
+        "0x960b1051749987b45b5679007fff577a1c2f763ec21c15a6c5eb193075003785",
+        "0xf1285c521ea44728723cb0168c0d4a198755c53681bf23b3a0a12f46120c51be"
+      ]
+    },
+    "diffMode_WRITE_post": {
+      "accountsListed": 2,
+      "wmonStorageKeys": 2,
+      "hasHolderBalanceSlot": true,
+      "keys": [
+        "0x960b1051749987b45b5679007fff577a1c2f763ec21c15a6c5eb193075003785",
+        "0xf1285c521ea44728723cb0168c0d4a198755c53681bf23b3a0a12f46120c51be"
+      ]
+    },
+    "nonDiff_WRITE": {
+      "accountsListed": 3,
+      "wmonStorageKeys": 5,
+      "hasHolderBalanceSlot": true,
+      "keys": [
+        "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b",
+        "0x7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c3",
+        "0x960b1051749987b45b5679007fff577a1c2f763ec21c15a6c5eb193075003785",
+        "0xf1285c521ea44728723cb0168c0d4a198755c53681bf23b3a0a12f46120c51be"
+      ]
+    },
+    "readIsListed": true,
+    "readListedInDiffMode": false
+  },
+  "overrides": {
+    "multicall3Present": true,
+    "eth_call_stateOverride_balance": {
+      "returned": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+      "works": true
+    },
+    "eth_call_blockOverrides_time": "err -32602 Invalid params",
+    "eth_call_blockOverrides_timestamp_key": "err -32602 Invalid params",
+    "eth_call_blockOverrides_number": "err -32602 Invalid params",
+    "debug_traceCall_stateOverrides": {
+      "output": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+      "works": true
+    },
+    "debug_traceCall_blockOverrides_time": {
+      "output": "0x000000000000000000000000000000000000000000000000000000006ac5c5f3",
+      "works": false
+    },
+    "debug_traceCall_blockOverrides_number": {
+      "output": "0x00000000000000000000000000000000000000000000000000000000041ae5ff",
+      "works": false
+    }
+  },
+  "traceBlock2": {
+    "ByNumber callTracer": {
+      "ms": 1490,
+      "bytes": 52678,
+      "txs": 3
+    },
+    "ByNumber prestate": {
+      "ms": 506,
+      "bytes": 529389,
+      "txs": 3
+    },
+    "ByNumber prestate diffMode": {
+      "ms": 474,
+      "bytes": 23877,
+      "txs": 3
+    },
+    "ByHash prestate diffMode": {
+      "ms": 510,
+      "bytes": 23877
+    },
+    "ByNumber diffMode @-100k": "ok"
+  },
+  "latency": {
+    "eth_call@latest": {
+      "n": 20,
+      "fail": 0,
+      "p50": 510,
+      "p95": 6498
+    },
+    "debug_traceCall prestate@latest": {
+      "n": 20,
+      "fail": 0,
+      "p50": 339,
+      "p95": 447
+    },
+    "debug_traceCall prestate@blockNumber(-3)": {
+      "n": 20,
+      "fail": 0,
+      "p50": 338,
+      "p95": 873
+    },
+    "debug_traceCall callTracer@latest": {
+      "n": 20,
+      "fail": 0,
+      "p50": 416,
+      "p95": 6463
+    },
+    "debug_traceCall prestate@-100k": {
+      "n": 20,
+      "fail": 0,
+      "p50": 637,
+      "p95": 1675
+    }
+  },
+  "rateLimit": {
+    "burst": 40,
+    "failed": 0,
+    "http429": 0,
+    "wallMs": 2333,
+    "sampleError": null
+  }
+}

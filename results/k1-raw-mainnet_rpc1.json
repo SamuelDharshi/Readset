@@ -1,0 +1,135 @@
+{
+  "mainnet:rpc1.monad.xyz": {
+    "getLogs": "ok",
+    "traceCall:prestate@latest": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate@blockNumber": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate@blockHashString": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate@EIP1898{blockHash}": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate@EIP1898{blockNumber}": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate@-100": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate@-10000": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate@-100000": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:callTracer@blockNumber": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate(no tracerConfig) READ": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate diffMode:false READ": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate diffMode:true READ": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate diffMode:true WRITE(transfer)": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceCall:prestate diffMode:false WRITE(transfer)": {
+      "code": -32600,
+      "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "overrides": {
+      "r1": {
+        "ok": true,
+        "result": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "http": 200,
+        "ms": 233.28179999999702
+      },
+      "r2": {
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params"
+        },
+        "http": 200,
+        "ms": 75.16270000000077
+      },
+      "r2b": {
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params"
+        },
+        "http": 200,
+        "ms": 94.14359999999579
+      },
+      "r3": {
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params"
+        },
+        "http": 200,
+        "ms": 104.08599999999569
+      },
+      "t1": {
+        "ok": false,
+        "error": {
+          "code": -32600,
+          "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+        },
+        "http": 400,
+        "ms": 102.61009999999806
+      },
+      "t2": {
+        "ok": false,
+        "error": {
+          "code": -32600,
+          "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+        },
+        "http": 400,
+        "ms": 96.9568999999974
+      },
+      "t3": {
+        "ok": false,
+        "error": {
+          "code": -32600,
+          "message": "debug_traceCall is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+        },
+        "http": 400,
+        "ms": 76.44169999999576
+      }
+    },
+    "traceBlock:callTracer": {
+      "code": -32600,
+      "message": "debug_traceBlockByNumber is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceBlock:prestate": {
+      "code": -32600,
+      "message": "debug_traceBlockByNumber is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    },
+    "traceBlock:prestate diffMode": {
+      "code": -32600,
+      "message": "debug_traceBlockByNumber is not available on the public rpc - upgrade to Pay As You Go, or Enterprise for access."
+    }
+  }
+}
