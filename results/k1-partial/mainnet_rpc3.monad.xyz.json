@@ -1,0 +1,150 @@
+{
+  "endpoint": "https://rpc3.monad.xyz",
+  "net": "mainnet",
+  "reachable": true,
+  "chainId": "0x8f",
+  "client": "Monad/0.16.4",
+  "head": 111223502,
+  "history": {
+    "-1": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-100": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-10000": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-100000": {
+      "getBalance": "ok",
+      "ethCall": "ok",
+      "ok": true
+    },
+    "-1000000": {
+      "getBalance": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ethCall": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ok": false
+    },
+    "-5000000": {
+      "getBalance": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ethCall": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ok": false
+    },
+    "-20000000": {
+      "getBalance": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ethCall": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ok": false
+    },
+    "-50000000": {
+      "getBalance": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ethCall": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ok": false
+    },
+    "-100000000": {
+      "getBalance": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ethCall": "err -32602 Block requested not found. Request might be querying historical state that is not available. If possible, reformulate query to point to more",
+      "ok": false
+    },
+    "getBlockByNumber(-1M)": "ok",
+    "bisectedStateWindowBlocks": 444531,
+    "archive": false
+  },
+  "holder": "0x659bd0bc4167ba25c62e05656f78043e7ed4a9da",
+  "traceBlock": {
+    "number": 111223499,
+    "hash": "0x82e7956dcd4743642acb184c94fcffa0cc185165d04dd12c4ffb650f49dfac50"
+  },
+  "traceCall": {
+    "prestate@latest": "err -32053 API key is not allowed to access method",
+    "prestate@blockNumber": "err -32053 API key is not allowed to access method",
+    "prestate@blockHashString": "err -32053 API key is not allowed to access method",
+    "prestate@EIP1898{blockHash}": "err -32053 API key is not allowed to access method",
+    "prestate@EIP1898{blockNumber}": "err -32053 API key is not allowed to access method",
+    "prestate@-100": "err -32053 API key is not allowed to access method",
+    "prestate@-10000": "err -32053 API key is not allowed to access method",
+    "prestate@-100000": "err -32053 API key is not allowed to access method",
+    "callTracer@blockNumber": "err -32053 API key is not allowed to access method",
+    "prestate(no tracerConfig) READ": "err -32053 API key is not allowed to access method",
+    "prestate diffMode:false READ": "err -32053 API key is not allowed to access method",
+    "prestate diffMode:true READ": "err -32053 API key is not allowed to access method",
+    "prestate diffMode:true WRITE(transfer)": "err -32053 API key is not allowed to access method",
+    "prestate diffMode:false WRITE(transfer)": "err -32053 API key is not allowed to access method"
+  },
+  "readOnlySlots": {
+    "note": "pure read: WMON.balanceOf(holder). hasHolderBalanceSlot=true means read-only slot IS listed",
+    "nonDiff_noConfig": null,
+    "nonDiff_false": null,
+    "diffMode_READ_pre": null,
+    "diffMode_READ_post": null,
+    "diffMode_WRITE_pre": null,
+    "diffMode_WRITE_post": null,
+    "nonDiff_WRITE": null,
+    "readIsListed": false,
+    "readListedInDiffMode": false
+  },
+  "overrides": {
+    "multicall3Present": true,
+    "eth_call_stateOverride_balance": {
+      "returned": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+      "works": true
+    },
+    "eth_call_blockOverrides_time": "err -32602 Invalid params",
+    "eth_call_blockOverrides_timestamp_key": "err -32602 Invalid params",
+    "eth_call_blockOverrides_number": "err -32602 Invalid params",
+    "debug_traceCall_stateOverrides": "err -32053 API key is not allowed to access method",
+    "debug_traceCall_blockOverrides_time": "err -32053 API key is not allowed to access method",
+    "debug_traceCall_blockOverrides_number": "err -32053 API key is not allowed to access method"
+  },
+  "traceBlock2": {
+    "ByNumber callTracer": "err -32053 API key is not allowed to access method",
+    "ByNumber prestate": "err -32053 API key is not allowed to access method",
+    "ByNumber prestate diffMode": "err -32053 API key is not allowed to access method",
+    "ByHash prestate diffMode": "err -32053 API key is not allowed to access method",
+    "ByNumber diffMode @-100k": "err -32053 API key is not allowed to access method"
+  },
+  "latency": {
+    "eth_call@latest": {
+      "n": 20,
+      "fail": 0,
+      "p50": 142,
+      "p95": 261
+    },
+    "debug_traceCall prestate@latest": {
+      "n": 0,
+      "fail": 20,
+      "p50": null,
+      "p95": null
+    },
+    "debug_traceCall prestate@blockNumber(-3)": {
+      "n": 0,
+      "fail": 20,
+      "p50": null,
+      "p95": null
+    },
+    "debug_traceCall callTracer@latest": {
+      "n": 0,
+      "fail": 20,
+      "p50": null,
+      "p95": null
+    },
+    "debug_traceCall prestate@-100k": {
+      "n": 0,
+      "fail": 20,
+      "p50": null,
+      "p95": null
+    }
+  },
+  "rateLimit": {
+    "burst": 40,
+    "failed": 0,
+    "http429": 0,
+    "wallMs": 1217,
+    "sampleError": null
+  }
+}
