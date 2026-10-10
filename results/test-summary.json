@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-10-09T04:06:04.651Z",
+  "total": 194,
+  "passed": 194,
+  "failed": 0,
+  "suites": 14,
+  "files": [
+    {
+      "file": "test/gate.test.ts",
+      "status": "passed",
+      "tests": 38
+    },
+    {
+      "file": "test/offline.test.ts",
+      "status": "passed",
+      "tests": 26
+    },
+    {
+      "file": "test/replay.test.ts",
+      "status": "passed",
+      "tests": 21
+    },
+    {
+      "file": "test/explain.test.ts",
+      "status": "passed",
+      "tests": 20
+    },
+    {
+      "file": "test/receipt.test.ts",
+      "status": "passed",
+      "tests": 19
+    },
+    {
+      "file": "test/breaker.test.ts",
+      "status": "passed",
+      "tests": 12
+    },
+    {
+      "file": "test/verdict.test.ts",
+      "status": "passed",
+      "tests": 11
+    },
+    {
+      "file": "test/abandonment.test.ts",
+      "status": "passed",
+      "tests": 9
+    },
+    {
+      "file": "test/label.test.ts",
+      "status": "passed",
+      "tests": 9
+    },
+    {
+      "file": "test/failed-index.test.ts",
+      "status": "passed",
+      "tests": 7
+    },
+    {
+      "file": "test/trace.test.ts",
+      "status": "passed",
+      "tests": 7
+    },
+    {
+      "file": "test/server.test.ts",
+      "status": "passed",
+      "tests": 6
+    },
+    {
+      "file": "test/chain.test.ts",
+      "status": "passed",
+      "tests": 5
+    },
+    {
+      "file": "test/guarded-client.test.ts",
+      "status": "passed",
+      "tests": 4
+    }
+  ]
+}

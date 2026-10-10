@@ -1,0 +1,529 @@
+{
+  "source": "results/replay/latest.json",
+  "successfulN": 1207,
+  "falseBlockCandidates": 103,
+  "stillRevertsAtN3": 52,
+  "cleanAtN3": 12,
+  "unmeasured": 39,
+  "rates": {
+    "naiveRefuseOnAnyRevertAtN1": 0.08533554266777134,
+    "stableRequireRevertAtN1AndN3": 0.04308202154101077
+  },
+  "detail": [
+    {
+      "hash": "0xd8dc6acac45f0a28963de153223f7d4eb3f466510953bf2c36776b1eb302bc8f",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xf56405b110fd9b8233eb390c0736c5b44e0230f0c6a5648febd07a11046ad246",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xc4792d192d19315ae2d1648d25ef487537060078460301161c960884a46e4bba",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x9797b64771850346000fb6836d14c13efdbe3405f140b5595bc3cac2d129e686",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xd895831bebe36e23ee3307ae23a3511fc96cb6d5288b461e72f2ec5264a64ffc",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x2dcaa86fb7d7e79755ee620b27149065f936c2de039b209e36139120658039db",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x5c5755a747e778e63493f5e97a4ad3430921606d982f1d50c7b185f66d99f5ca",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x293c7e40983858319f2f5543eac7b637f48ce93b0a0d1edd163acbf4d5c1ff7b",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x89d4e006f60eb286a7585fe533b9b46488feb5a15e6f3c7782ab097b736dae5b",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x42d96973f56b7e8170a7424fc48370dede08044691fdb524dc91463c17fa6b54",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x5d735d43cbcdf8e2d0ba8e7647e97a01e0c8f69fda073d6254ead39bc9468dff",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xd7a06f9ae489750e6b3009df2b82d12e8766f6de7f28db9cd16a476000ae4bb3",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x65995bf31cf61f93ecc8c5b6ef86e7fa7948b0b4cbbf6979a4ce7b4171e03684",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xb24e46c1f1bba3e0f3be51f9dac5ca4070b103a8e068b5181f14e1af9bc06a16",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xfd2ec87c0f3e4329865811d017bb74ea6d5b4d7ce0a7fc0287dd387c8db4f4c6",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xb8be45d46b06f281506c64584492a51d06d5487518debc3ef95487b6918438ba",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xd96a8a1be29340668edb7cb452336d198b9f0655f1e0f3b24d6b427b6147b858",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0x0102036b3907421a1007f2289195ad3c10c34c2bc29eee6eb10c69a2feab75f7",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xdf71364fa9131e69eb767d9904e8f9f26cd8af0f37549bbe4a532f2a0b913ec4",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xeec94d85ec4891245ac3009f94b3eeff584e5aa525858e8db953cf18538e9c5e",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x7016c30256ef19d39db239fdd771c3cede120bd347de57ff3577e3cb80111cb7",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x2710ce748b37015af7f30096e679445fe16cc51df4fb3ad533eb11720678303f",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xd85c4d3a1d65af4866d3e2e03ea924580d0944e0f0f2f0a67f39965563a79466",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xba692d0acb946648a1b12aea7ccb2c9c68c81532ba5af8e7e866df3d27c080aa",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x00169b82fd12a585247795ccc90618c6a5728aa74add26feb7cc6f5a56e22ff4",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0xaa8e3fe0014ba1d82afaaf31516e2ec3d4eb870ddc6ee9b400da8405855735d9",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xc6cbf180c34894b5ec076a05b231b8f09965a13c8b3e111812daadd2bbc282d2",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x0acff4938f97fdad7fd9a3fd21a1bc9402fad1aaee670831515337d21714bf4a",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x54d781636dd3054bfae39c454440c1ce561c61a8b9a5f686afa809444abea81f",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x00501dd4b534f8533324e04112c9c207c6c0de283bfb59419d9dfa2456f54b31",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xe7a5db7f9e2d3e69916823510fec33700f0dc6e447ae7b203187b30825734fdf",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xc7a62bb047f5d8d9ed6152ff77d7bddbda1e5d18f2da98c7e37ac17eb2df34a6",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x2fcfe67d9c8f41ca914289ca48f40e7a18e35bccdb3a77fa1b22712c189e0631",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xf4907d903739153a2e3a51c886276f92539a774eae64168e438fa94a58c83c10",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xf519d47f72a4521e4f66987fafe487c20249f0592f378c4efcc42feee9923efb",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xfe7f5906d2917f96039aed731fd2c1dee53e259728cda4c63add4e401743b24e",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x72a2e92416d74010e2439a952a1fad4afceea4e95d08ad43526286c4ab2ca285",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x9e978bf7aecc1c18959cfbf9047d4c378c5d4ed80e4e9fecdd56a8a2396a5462",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xdaa8f20543ea7af737ddf8356e6c80064a95454adee89a57ff0e8e5efcffe00f",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xe5902106a6f5c20fc4cd6d741c1ae1a6cdd420f3506b4e3a8a48b0777697c895",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x43fee7a09273d2c83a7bd635b6417c9ae95dc115c9823208f799b55d11600ac6",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x3a6286b862f5010afbbc5f1a395a4d50fc6fe85ef2e8ad259f1b5ea273acb09f",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xc684090aa02fb5ea4bd33a268976637dc4eee459392bd47abe8d6a79447942c5",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x28e125cf51ebaf26032b232cb345b1d5f235f3c8a7de9d995e8fb3d09122e6aa",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x5725d7932cdf3545d94d60f577fea8f30f86d18c58696329a3d9e2cfdc59aebb",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x88f6a880eb1dd9e6e80c12458ee0267a3f7dd0d1494e225ea4d269fbdf522992",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x502f46ef079dda0d7e4fa6325870bfc18a66fc9777f10cabce2f328c6e363b11",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x4a3c221f597c5462b88d4f20669b1e964dc3260f06f49e7d0225e6d46fb7b066",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xe50bdbaf5078f22698add9dfc017a9a14b4406334dd900b8db60f8fe994e3abb",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0xf2499f375da979a6296d44b4cd2d76e773974d55a4d840410f4f5014d17dcd29",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x589903b0fd2424f1fbf67c2a8c491e07e7bc95a86448d9f8313933793dac4e78",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xc313780ba40ef83510fbc339c46d5ea2bf583d10a1c880580cc4129778c2109f",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xe06001a4c65a8933df8315c8e514b6bd54b2d4842eee48ee59bf0307b803d0e3",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x79bb3b2781a0877be0fa44a5ca0e96464b191faf09ef39fa7cc5c268e0667d6d",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x8c3c815821e1a98d3272e2957c5ecf09e62e0fe87a05960dbbc0f2deb3df2f1a",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x0193c64f4b4932b84aa956bb048d3734aa609e734765820c70425a568bbd50a0",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xdbe32d5e71d84adc85e93366dce12f2ee0c16b0222784d86b9aa9798d301e1ce",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x63c5dfa1c4d729addf3aff533daeaf982409f40b2ac6f0a2af9ba719741a7d54",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x41492524247fb95aa7dfc1e1a3521f25c3d40b98f8f8daee6714a953a2ade804",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xe55b8d002639d36b63ff8024e9b7c532d4355cc0b326daa38d4142d3a6b8d9e6",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x4338f7947c8eb9c31e3eade3ffc8beb62ae5323f2d5268fb7d8a98871b246239",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0x3df6ac09432ce3e78c81c70b4f09a6cc0f050b5ac5531b3d403e59c7a10970fa",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x0cbbb48cadab8674dc02e1fdde4f352e9f665005dec276ec8fb4924513908c32",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x3c6717e94340c46d2306f3ea2e2befb0ca67a13d6426244c6d17940d355b93e3",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xd4239e4a313dfb80581e6269cebfbac19b20d7846fb831652876872869cc6425",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xbd1a127a6aeb2e2f34ffb22589e0ce43d8cfb2fe84aab822a97e3228939204de",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x5747de899750716471599bcd308783e05610c79a15a0962737e3e3f9992e0231",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0xdcabd08e926742c3533e5904fd5c2f7c74ca8f52ea48eaeb3d2ea4978ac6f9f5",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x60ca65617cbba15b7dabe8fb19a1f67fb0190f6d938710eed0337cd3c6aa8126",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xc68a6a26bae87219ea05d20ab0ed4c75198edbc98d6091d43862e71fe57070fc",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x609ab0fb19fdf8fddf1592b0bd234172ac4dc23ecc9068326bfa93fd272ce0ff",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x4fd0adfe5d25aa672ccb30168719f93b41b99bf74f12502fbcce170bdc299186",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x177ee72750944d7d8b5a3c19c371aae3d41c09fca97926b99cdaa667bbac87e3",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x3d5038612bc2c0b594ff55453e488356b00fcab185e485114b9f8ab057f17348",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x871dc656954968df9bace7eeaa5300e476bc84595d8e397949af620e3fa4995b",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xe7b4dfba82951ec89bf3f9d6d938324fb7babc6812327d170d313abd5b86e90b",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xc7a99617b3cd6bce0a6d0378d79473916e6297b08706fc72cabaf489247b19f9",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x611a773498ea64509333ecfbe2ec25dddaa335e7be41b8b3f8d401ff788dc309",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xf073065a594c3f759ff4f5f12dfd5ee43771ac91722af70f54570426fe6c9faf",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xa814a044b6d8d475426302bd716f590bdcad57c83d95105beb1ed2332fb417f5",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xc388c464a831cc71acd8b57579ff4bb2509c3516a1b4d49e794e7f965c7936d0",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0xf17ba3887e3e5fabfd0a0b62256227ec6053bbf6117d8f2f0a297da1ac7d945f",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x696a1aba6b6a4eedb7cf4f9c691e491cb41620afbab6c720b371e45842e426e8",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x0cd1054afdbb67b1f902448b2d757c5c57d77d0d96a8806dbfc7eb6e02acebae",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xd60265d9563e437742f313d452258462cec4094f335d9b7da29e0a2f049c0911",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0xf1fb451503b5fa3ccd920677160e996fdae4aed4571b3592723bfb779f2481de",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x59966f307282f4ccb2d499a4ce407d17059f3fb2444d2fe5e9780e56fde6c30d",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0x24945d2f60a64c0963afdca3d49767044d834f615a67b22685c32ed3336fc517",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x3d33ee22e07a1842d081fa9d804ccfdb4579c16ba2b9848b4d1532630e6d94a4",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0x72960d6f302a56f64e4ad4e7075b525cfd37d596ee2ca3bbed0dfd64bd1e0a54",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xd2e5ee6068c5d3ed1f219c9f1a72f36221e58a20fcb949a66862e7cbf4bab740",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x050022573f9cb01ae8cdd7af05b3148fe35bdc65351743ae317960e612d2d78c",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x51ce282a738fd53eaf20cdd71ca65683f42d0e4b0656e279c3ed9b864351c2b4",
+      "revertsAtN3": null,
+      "error": null
+    },
+    {
+      "hash": "0x93518e1ba7d8dd0d9219b0f9ab864c1d867dac8a56ed79de06be8e95be2fc649",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x70a61fde2c3b3cac905488626dde4fe79bcb9d2f60b98a972b3486cd7e2b263e",
+      "revertsAtN3": true,
+      "error": "execution reverted: F6"
+    },
+    {
+      "hash": "0xc1e2eff3d73c49be271ecfd3cc1543a306b9db6b89f0b45cce64a1ff366509c3",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x752090fe23424827a0e78b29c678ea33a56e912f8405a861d61f19db4e27458c",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0x202288b8eb54d10e8068cf389b864cf68875e074b23e4ff4cdd8bde8068f39d3",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0x2aa477c7e8aa1962dab44542e0142698ed8a952c84200b0ae5a9ce4ec7bb253b",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0xaac77e8082519b13edbf41642337dbc8e563dcbbe51e767c3524cef58f177e17",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xe9c3a5203d7d05e810f7d3f46fc4e07383933008d803f9f3355ea0d3e25e6369",
+      "revertsAtN3": false,
+      "error": null
+    },
+    {
+      "hash": "0x8a9c09cd07a75936295a33e1c753f07e85075a602ae47cd88b9bdf7947edaec1",
+      "revertsAtN3": true,
+      "error": "user-specified gas exceeds provider limit"
+    },
+    {
+      "hash": "0xc1de06f8804328c0e4b323a727ec2f9b87a0a07f09a7f322788a8c1561855808",
+      "revertsAtN3": false,
+      "error": null
+    }
+  ]
+}
